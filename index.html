@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potential Energy Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="header">Gravitational Potential Energy Calculator </h1>
+
+    <div id="diagrams">
+        <div id="slope"></div>
+        <div id="circle"></div>
+    </div>
+
+    <div class="inputs">
+
+        <div class="formcontrol">
+            <input type="number" id="mass-choice"  value="5" step="0.1" required="">
+            <label>
+            <span style="transition-delay:0ms">M</span><span style="transition-delay:50ms">a</span><span style="transition-delay:100ms">s</span><span style="transition-delay:150ms">s</span><span style="transition-delay:200ms"> (</span><span style="transition-delay:250ms">k</span><span style="transition-delay:300ms">g</span><span style="transition-delay:350ms">)</span>
+            </label>
+        </div>
+
+        <div class="formcontrol">
+        <input type="number" id="gravity-choice" value="9.8" step="0.1" required="">
+            <label>
+            <span style="transition-delay:0ms">G</span><span style="transition-delay:50ms">r</span><span style="transition-delay:100ms">a</span><span style="transition-delay:150ms">v</span><span style="transition-delay:200ms">i</span><span style="transition-delay:250ms">t</span><span style="transition-delay:300ms">y</span><span style="transition-delay:350ms"> (</span><span style="transition-delay:400ms">m</span><span style="transition-delay:450ms">/</span><span style="transition-delay:500ms">s</span><span style="transition-delay:550ms">²</span><span style="transition-delay:600ms">)</span>
+            </label>
+        </div>
+
+        <div class="formcontrol">
+        <input type="number" id="height-choice" value="10" step="0.1" required="">
+            <label>
+            <span style="transition-delay:0ms">H</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">i</span><span style="transition-delay:150ms">g</span><span style="transition-delay:200ms">h</span><span style="transition-delay:250ms">t</span><span style="transition-delay:300ms"> (</span><span style="transition-delay:350ms">m</span><span style="transition-delay:400ms">)</span>
+            </label>
+        </div>
+    </div>
+
+    <button id="calculate">Calculate</button>
+        <div class="answer" id="result">
+            GPE = <span id="energy">0</span> Joules
+        </div>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
